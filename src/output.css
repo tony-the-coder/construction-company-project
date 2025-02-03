@@ -1484,9 +1484,7 @@
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
   }
-  .\[o\:Ɏ�cw3තU\16 \@-u\15 e\14 ���s�I\13 \] {
-    o: Ɏ�cw3තU@-ue���s�I;
-  }
+ 
   .group-hover\:bg-white\/50 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
