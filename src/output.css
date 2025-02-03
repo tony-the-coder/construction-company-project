@@ -784,11 +784,17 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
+  .h-48 {
+    height: calc(var(--spacing) * 48);
+  }
   .h-56 {
     height: calc(var(--spacing) * 56);
   }
   .h-96 {
     height: calc(var(--spacing) * 96);
+  }
+  .h-\[200px\] {
+    height: 200px;
   }
   .h-auto {
     height: auto;
@@ -883,6 +889,12 @@
     --tw-scale-x: 75%;
     --tw-scale-y: 75%;
     --tw-scale-z: 75%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-125 {
+    --tw-scale-x: 125%;
+    --tw-scale-y: 125%;
+    --tw-scale-z: 125%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .transform {
@@ -1015,6 +1027,12 @@
   .border-white {
     border-color: var(--color-white);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-black\/5 {
+    background-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+  }
   .bg-blue-100 {
     background-color: var(--color-blue-100);
   }
@@ -1092,6 +1110,9 @@
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
@@ -1298,6 +1319,14 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .drop-shadow {
+    --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow( 0 1px 1px rgb(0 0 0 / 0.06));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .drop-shadow-sm {
+    --tw-drop-shadow: drop-shadow(var(--drop-shadow-sm));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
