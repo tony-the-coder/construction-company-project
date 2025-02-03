@@ -1255,6 +1255,9 @@
   .text-center {
     text-align: center;
   }
+  .align-text-bottom {
+    vertical-align: text-bottom;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -1330,6 +1333,9 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
+  .text-amber-900 {
+    color: var(--color-amber-900);
+  }
   .text-blue-500 {
     color: var(--color-blue-500);
   }
@@ -1365,6 +1371,9 @@
   }
   .text-purple-800 {
     color: var(--color-purple-800);
+  }
+  .text-red-500 {
+    color: var(--color-red-500);
   }
   .text-red-600 {
     color: var(--color-red-600);
