@@ -13,17 +13,27 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-navy-500">
-    <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-700 ">
+<body class="bg-off-white">
+    <!-- Nav Section Start -->
+    <!-- Change the nav background color here -->
+    <nav class="bg-navy-500 border-gray-200 dark:border-gray-600 dark:bg-grey-700 ">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+
+            <!-- Logo Area Start -->
             <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <!-- TODO #2 -->
                 <img src="img/lehman-logo.jpg" class="h-8" alt="Our Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Lehman Home
+                <!-- Change company name text here -->
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white font-jost">Lehman
+                    Custom
                     Construction</span>
             </a>
+
+            <!-- Logo Area End -->
+
+            <!-- Change Nav Hover Color -->
             <button data-collapse-toggle="mega-menu-full-image" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white  rounded-lg md:hidden hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-white dark:focus:ring-gray-600"
                 aria-controls="mega-menu-full-image" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -32,14 +42,22 @@
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>
             </button>
+
+            <!-- Home Button -->
             <div id="mega-menu-full-image"
                 class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
                 <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                            class="block py-2 px-3 text-red-900 border-b border-gray-100 hover:bg-amber-400 md:hover:bg-transparent md:border-0 md:hover:text-off-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-green-500 dark:hover:text-off-white md:dark:hover:bg-transparent dark:border-gray-700"
                             aria-current="page">Home</a>
                     </li>
+                    <!-- Home Button End -->
+
+
+
+                    <!-- Company Button Start -->
+
                     <li>
                         <button id="mega-menu-full-cta-image-button"
                             data-collapse-toggle="mega-menu-full-image-dropdown"
@@ -50,16 +68,30 @@
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg></button>
                     </li>
+
+                    <!-- Company button end -->
+
+
+
+                    <!-- Marketplace Company Start -->
                     <li>
                         <a href="#"
                             class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
                     </li>
 
+                    <!-- Marketplace Company End-->
 
+
+                    <!-- Contact Page Start -->
                     <li>
                         <a href="#" data-modal-target="contact-modal" data-modal-toggle="contact-modal"
                             class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                     </li>
+
+                    <!-- Contact Page End -->
+
+
+                    <!-- Burger button Start -->
                     <li>
                         <a href="#" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                             class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"><svg
@@ -74,13 +106,17 @@
 
                     </li>
 
+                    <!-- Burger button end -->
+
+
                 </ul>
             </div>
         </div>
+        <!-- Change the megamenu color here -->
         <div id="mega-menu-full-image-dropdown"
-            class="mt-1 bg-white border-gray-200 shadow-xs border-y dark:bg-gray-800 dark:border-gray-600 hidden">
+            class="mt-1 bg-navy-500 border-gray-200 shadow-xs border-y dark:bg-off-white dark:border-gray-600 hidden">
             <div
-                class="grid max-w-screen-xl px-4 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
+                class="grid max-w-screen-xl px-4 py-5 mx-auto text-sm text-off-white dark:bg-off-white md:grid-cols-3 md:px-6">
                 <ul class="hidden mb-4 space-y-4 md:mb-0 md:block" aria-labelledby="mega-menu-full-image-button">
                     <li>
                         <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
@@ -158,14 +194,14 @@
     <!-- Start Hero Section -->
 
     <section
-        class="mt-10 bg-center bg-cover bg-no-repeat bg-[url('img/johnson-johnson-U6Q6zVDgmSs-unsplash.jpg')] bg-gray-400 bg-blend-multiply h-screen flex ">
+        class="mt-5 bg-center bg-cover bg-no-repeat bg-[url('img/johnson-johnson-U6Q6zVDgmSs-unsplash.jpg')] bg-gray-400 bg-blend-multiply h-screen flex m-1">
 
         <div class="px-10 mx-auto max-w-screen-xl py-25 lg:py-20">
             <h1
-                class="mb-4 mx-auto justify-center text-4xl font-extrabold font-arsenal tracking-tight leading-none text-white md:text-5xl lg:text-6xl top-0">
-                Your
-                Local Custom Home Builder</h1>
-            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">We specialize in getting you
+                class="mb-4 mx-auto justify-center text-4xl font-extrabold font-jost tracking-tight leading-none text-white md:text-5xl lg:text-6xl top-0">
+                Your Local Custom Home Builder</h1>
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48 font-arsenal">We specialize in
+                getting you
                 from blueprints to unlocking the door of your dream custom home
             </p>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
@@ -203,7 +239,8 @@
                         Portfolio</h3>
                     </a>
                 </div> -->
-                <div class="text-center py-4 px-6 bg-white hover:bg-gray-50 shadow-sm hover:shadow">
+                <!-- Start Portfolio Div -->
+                <!-- <div class="text-center py-4 px-6 bg-white hover:bg-gray-50 shadow-sm hover:shadow border-1 border-navy-500">
                     <a href="#" class="group relative block">
                         <div class="relative">
                             <img src="img/movie-night-by-pool-whole-family.jpg" alt="Portfolio"
@@ -215,8 +252,10 @@
                         <h3 class="text-xl font-bold mt-4 group-hover:text-blue-700 transition-colors duration-300">
                             Portfolio</h3>
                     </a>
-                </div>
-                <div class="text-center py-4 px-6 bg-white hover:bg-gray-50 shadow-sm hover:shadow">
+                </div> -->
+                <!-- End Portfolio Div -->
+                <!-- Start Styles Div -->
+                <!-- <div class="text-center py-4 px-6 bg-white hover:bg-gray-50 shadow-sm hover:shadow">
                     <a href="home-styles.html" class="group relative block">
                         <div class="relative">
                             <img src="img/floorplan-pexels-a-darmel-7641859.jpg" alt="Style Plans"
@@ -228,8 +267,13 @@
                         <h3 class="text-xl font-bold mt-4 group-hover:text-blue-700 transition-colors duration-300">
                             Styles</h3>
                     </a>
-                </div>
-                <div class="text-center py-4 px-6 bg-white hover:bg-gray-50 shadow-lg hover:shadow">
+                </div> -->
+
+                <!--End Styles Div  -->
+                <!-- Custom Plans Div -->
+
+
+                <!-- <div class="text-center py-4 px-6 bg-white hover:bg-gray-50 shadow-lg hover:shadow">
                     <a href="#" class="group relative block">
                         <div class="relative">
                             <img src="img/blueprint-house-with-details/2978394.jpg" alt="Custom Plans"
@@ -244,7 +288,57 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
+
+                <div
+                    class="text-center py-6 px-8 bg-white shadow-md hover:shadow-xl border-1 border-gray-200 transition-all duration-300 ease-in-out">
+                    <a href="#" class="group relative block">
+                        <div class="relative">
+                            <img src="img/movie-night-by-pool-whole-family.jpg" alt="Portfolio"
+                                class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300">
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mt-6 group-hover:text-navy-700 transition-colors duration-300">
+                            Portfolio
+                        </h3>
+                    </a>
+                </div>
+
+                <div
+                    class="text-center py-4 px-6  bg-white hover:bg-gray-100 shadow-sm hover:shadow-lg border-1 border-navy-500 transition-all duration-300 ease-in-out">
+                    <a href="#" class="group relative block">
+                        <div class="relative">
+                            <img src="img/floorplan-pexels-a-darmel-7641859.jpg" alt="Styles"
+                                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black opacity-10 group-hover:opacity-0 transition-opacity duration-300">
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4 group-hover:text-blue-700 transition-colors duration-300">
+                            Styles
+                        </h3>
+                    </a>
+                </div>
+
+                <div
+                    class="text-center py-4 px-6 bg-white hover:bg-gray-100 shadow-sm hover:shadow-lg  transition-all duration-300 ease-in-out">
+                    <a href="#" class="group relative block">
+                        <div class="relative">
+                            <img src="img/blueprint-house-with-details/2978394.jpg" alt="Custom Plans"
+                                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-black opacity-10 group-hover:opacity-0 transition-opacity duration-300">
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mt-4 group-hover:text-blue-700 transition-colors duration-300">
+                            Custom Plans
+                        </h3>
+                    </a>
+                </div>
+
+
     </section>
 
     <!-- End Center Option Section -->
@@ -299,10 +393,16 @@
                     </div>
                 </div>
             </div>
+
+
+
             <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+
+
+
+            <div class="hidden duration-700 ease-in-out border-2 border-navy-500" data-carousel-item>
                 <div class="absolute inset-0 flex">
-                    <div class="w-1/3 flex items-center justify-center bg-gray-100 bg-opacity-50 p-4">
+                    <div class="w-1/3 flex items-center justify-center bg-off-white bg-opacity-50 p-4">
                         <div class="text-gray-500 text-center">
                             <p class="text-2xl font-bold">Fourth person saying nice stuff</p>
                             <p class="mt-2">--- John D.</p>
@@ -314,6 +414,9 @@
                     </div>
                 </div>
             </div>
+
+
+
             <!-- Item 5 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <div class="absolute inset-0 flex">
@@ -379,15 +482,14 @@
 
 
 
-    <footer class="bg-white dark:bg-gray-900">
+    <footer class="bg-navy-500 dark:bg-gray-900">
 
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="index.html" class="flex items-center">
-                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Lehman
-                            Custom
+                        <img src="img/lehman-logo.jpg" class="h-8 me-3" alt="Our Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Lehman Custom
                             Construction</span>
                     </a>
                 </div>
