@@ -1,7 +1,7 @@
 /* input.css file */
 @import "tailwindcss";
 @config "./../tailwind.config.js";
-@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @plugin "flowbite/plugin";
 
 @source "../node_modules/flowbite";
@@ -19,14 +19,20 @@
     --color-primary-900: #1e3a8a;
     --color-navy: #14293a;
     --color-secondary: #E9C46A;
-    --color-off-white: #E9E4DE;
+    --color-off-white: #F4F1DE;
     --color-accent: #4A4A4A;
     --color-background: #F5F5F5;
     --color-brick: #C0392B;
+    --color-accent-2: #8D6e63;
+    --color-background-2: #F4F1De;
+    --color-brick-2:#e76f5a;
+    
     
     --font-sans: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-body: 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-mono: 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
     --font-arsenal: 'Arsenal SC';
-    --font-jost: 'Jost'
+    --font-jost: 'Jost';
+    --font-merriweather: 'Merriweather';
+    --font-lato: 'Lato';
 }

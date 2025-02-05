@@ -4,23 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lehman Custom Home Construction</title>
+    <title>Lehman custom construction</title>
     <link href="   output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <!-- Beginning Nav -->
-    <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+<body class="bg-off-white text-lato">
+    <!-- Nav Section Start -->
+
+    <nav class="bg-navy border-gray-200 dark:border-gray-600 dark:bg-grey-700 ">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+
+            <!-- Logo Area Start -->
             <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <!-- TODO #2 -->
-                <img src="" class="h-8" alt="Our Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Lehman Home
+                <img src="img/lehman-logo.jpg" class="h-8" alt="Our Logo" />
+                <!-- Change company name text here -->
+                <span
+                    class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white font-merriweather">Lehman
+                    Custom
                     Construction</span>
             </a>
+
+            <!-- Logo Area End -->
+
+            <!-- Change Nav Hover Color -->
             <button data-collapse-toggle="mega-menu-full-image" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white  rounded-lg md:hidden hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-white dark:focus:ring-gray-600"
                 aria-controls="mega-menu-full-image" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -29,14 +43,22 @@
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>
             </button>
+
+            <!-- Home Button -->
             <div id="mega-menu-full-image"
                 class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
                 <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                            class="block py-2 px-3 text-red-900 border-b border-gray-100 hover:bg-amber-400 md:hover:bg-transparent md:border-0 md:hover:text-off-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-green-500 dark:hover:text-off-white md:dark:hover:bg-transparent dark:border-gray-700"
                             aria-current="page">Home</a>
                     </li>
+                    <!-- Home Button End -->
+
+
+
+                    <!-- Company Button Start -->
+
                     <li>
                         <button id="mega-menu-full-cta-image-button"
                             data-collapse-toggle="mega-menu-full-image-dropdown"
@@ -47,16 +69,30 @@
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg></button>
                     </li>
+
+                    <!-- Company button end -->
+
+
+
+                    <!-- Marketplace Company Start -->
                     <li>
                         <a href="#"
                             class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
                     </li>
 
+                    <!-- Marketplace Company End-->
 
+
+                    <!-- Contact Page Start -->
                     <li>
                         <a href="#" data-modal-target="contact-modal" data-modal-toggle="contact-modal"
                             class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                     </li>
+
+                    <!-- Contact Page End -->
+
+
+                    <!-- Burger button Start -->
                     <li>
                         <a href="#" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
                             class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"><svg
@@ -71,13 +107,17 @@
 
                     </li>
 
+                    <!-- Burger button end -->
+
+
                 </ul>
             </div>
         </div>
+        <!-- Change the megamenu color here -->
         <div id="mega-menu-full-image-dropdown"
-            class="mt-1 bg-white border-gray-200 shadow-xs border-y dark:bg-gray-800 dark:border-gray-600 hidden">
+            class="mt-1 bg-navy border-gray-200 shadow-xs border-y dark:bg-off-white dark:border-gray-600 hidden">
             <div
-                class="grid max-w-screen-xl px-4 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400 md:grid-cols-3 md:px-6">
+                class="grid max-w-screen-xl px-4 py-5 mx-auto text-sm text-off-white dark:bg-off-white md:grid-cols-3 md:px-6">
                 <ul class="hidden mb-4 space-y-4 md:mb-0 md:block" aria-labelledby="mega-menu-full-image-button">
                     <li>
                         <a href="#" class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
@@ -149,17 +189,16 @@
             </div>
         </div>
     </nav>
-
-    <!-- End Nav -->
-
     <!-- End Nav Section -->
+
+
 
 
     <!-- Start Hero Section -->
 
 
 
-    <section class="bg-white dark:bg-gray-100 mb-10">
+    <section class="bg-background-2 dark:bg-gray-100 mb-10">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
             <div
                 class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
@@ -172,13 +211,16 @@
                     </svg>
                     Tutorial
                 </a>
-                <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Start Designing Your
+                <h1 class="text-gray-900 dark:text-white md:text-5xl font-extrabold mb-2 font-merriweather">Start
+                    Designing
+                    Your
                     Home Today</h1>
                 <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Cum hic aliquid sint sequi autem vero commodi laudantium, temporibus
+                    consectetur adipisicing elit. Cum hic aliquid sint sequi autem vero commodi laudantium,
+                    temporibus
                     et aut nesciunt culpa! Eum eaque ipsa ad esse, vero optio perspiciatis..</p>
                 <a href="#"
-                    class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    class="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-accent-2 rounded-lg bg-brick-2 hover:text-brick-2 hover:bg-accent-2 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                     Read more
                     <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 14 10">
@@ -199,10 +241,12 @@
                         </svg>
                         Design
                     </a>
-                    <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">View Options</h2>
+                    <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2 font-merriweather">View
+                        Options</h2>
                     <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Lorem ipsum dolor sit, amet
                         consectetur adipisicing elit. Et, omnis laborum? Dignissimos dolorum officia aperiam maiores
-                        possimus culpa repudiandae et, corporis natus molestias temporibus distinctio praesentium labore
+                        possimus culpa repudiandae et, corporis natus molestias temporibus distinctio praesentium
+                        labore
                         neque at eveniet.</p>
                     <a href="#"
                         class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read
@@ -218,10 +262,12 @@
                     class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
 
                     </a>
-                    <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Previous work</h2>
-                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Static websites are now used to
-                        bootstrap lots of websites and are becoming the basis for a variety of tools that even influence
-                        both web designers and developers.</p>
+                    <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2 font-merriweather">Previous
+                        work</h2>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Accusantium unde soluta ullam pariatur vel voluptate officiis
+                        laudantium perspiciatis harum? Quae vitae officiis error similique qui nisi repellat aliquid,
+                        expedita nemo!</p>
                     <a href="#"
                         class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read
                         more
@@ -238,29 +284,36 @@
 
 
     <!-- Start Center Option Section -->
-    <div class="flex text-red-500 justify-center mb-5">
-        <h2 class="text-3xl ">Check Out Our Current Styles</h2>
-    </div>
     <div class="grid grid-cols-2 gap-4">
-        <a href="individual-style-1.html">
-            <div class="py-4 px-6 hover:bg-gray-50 shadow-sm hover:shadow mb-4">
-                <img class="h-auto max-w-full rounded-lg" src="img/cozy-lively-home-interior-design.jpg" alt="">
-            </div>
-        </a>
         <div class="py-4 px-6 hover:bg-gray-50 shadow-sm hover:shadow">
-            <img class="h-auto max-w-full rounded-lg" src="img/luxury-water-swimming-resort-hotel.jpg" alt="">
+            <div class="relative h-48 w-full"> <img class="absolute h-full w-full object-cover rounded-lg"
+                    src="img/cozy-lively-home-interior-design.jpg" alt=""> </div>
+            <p class="text-center text-gray-700 mt-2">Cozy and Lively Interior</p>
         </div>
         <div class="py-4 px-6 hover:bg-gray-50 shadow-sm hover:shadow">
-            <img class="h-auto max-w-full rounded-lg" src="img/luxury-architecture-exterior-design.jpg" alt="">
+            <div class="relative h-48 w-full"> <img class="absolute h-full w-full object-cover rounded-lg"
+                    src="img/luxury-water-swimming-resort-hotel.jpg" alt=""> </div>
+            <p class="text-center text-gray-700 mt-2">Luxury Resort Hotel</p>
         </div>
         <div class="py-4 px-6 hover:bg-gray-50 shadow-sm hover:shadow">
-            <img class="h-auto max-w-full rounded-lg" src="img/modern-interior-design-interior.jpg" alt="">
+            <div class="relative h-48 w-full"> <img class="absolute h-full w-full object-cover rounded-lg"
+                    src="img/luxury-architecture-exterior-design.jpg" alt=""> </div>
+            <p class="text-center text-gray-700 mt-2">Luxury Architecture</p>
         </div>
         <div class="py-4 px-6 hover:bg-gray-50 shadow-sm hover:shadow">
-            <img class="h-auto max-w-full rounded-lg" src="img/modern-interior-design-interior-2.jpg" alt="">
+            <div class="relative h-48 w-full"> <img class="absolute h-full w-full object-cover rounded-lg"
+                    src="img/modern-interior-design-interior.jpg" alt=""> </div>
+            <p class="text-center text-gray-700 mt-2">Modern Interior Design</p>
         </div>
         <div class="py-4 px-6 hover:bg-gray-50 shadow-sm hover:shadow">
-            <img class="h-auto max-w-full rounded-lg" src="img/interior-shot-luxurious-house-dining-room.jpg" alt="">
+            <div class="relative h-48 w-full"> <img class="absolute h-full w-full object-cover rounded-lg"
+                    src="img/modern-interior-design-interior-2.jpg" alt=""> </div>
+            <p class="text-center text-gray-700 mt-2">Modern Interior Living</p>
+        </div>
+        <div class="py-4 px-6 hover:bg-gray-50 shadow-sm hover:shadow">
+            <div class="relative h-48 w-full"> <img class="absolute h-full w-full object-cover rounded-lg"
+                    src="img/interior-shot-luxurious-house-dining-room.jpg" alt=""> </div>
+            <p class="text-center text-gray-700 mt-2">Luxurious Dining Room</p>
         </div>
     </div>
 
@@ -293,7 +346,9 @@
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources
+                        <h2
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white font-merriweather">
+                            Resources
                         </h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
@@ -309,7 +364,9 @@
                         </ul>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us
+                        <h2
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white font-merriweather">
+                            Follow us
                         </h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
@@ -324,7 +381,9 @@
                         </ul>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                        <h2
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white font-merriweather">
+                            Legal</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
                                 <a href="#" class="hover:underline">Privacy Policy</a>
@@ -419,7 +478,8 @@
 
                             <div class="px-6 py-6 lg:px-8">
 
-                                <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Contact Us</h3>
+                                <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white font-merriweather">
+                                    Contact Us</h3>
 
                                 <form class="max-w-md mx-auto">
 
@@ -548,7 +608,9 @@
                             <span class="sr-only">Close modal</span>
                         </button>
                         <div class="py-6 px-6 lg:px-8">
-                            <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform
+                            <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white font-merriweather">Sign in
+                                to our
+                                platform
                             </h3>
                             <form class="space-y-6" action="#">
                                 <div>
@@ -656,7 +718,8 @@
                                 <span class="sr-only">Close modal</span>
                             </button>
                             <div class="px-6 py-6 lg:px-8">
-                                <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign Up</h3>
+                                <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white font-merriweather">
+                                    Sign Up</h3>
                                 <form class="max-w-md mx-auto">
                                     <div class="relative z-0 w-full mb-5 group">
                                         <input type="email" name="floating_email" id="floating_email"
